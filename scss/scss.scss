@@ -1,0 +1,58 @@
+/*variables*/
+$font: 'Poppins', sans-serif;
+$h1weight: 700;
+$h1size: 45px;
+$h2weight: 500;
+$h2size: 22px;
+$mainTextWeight: 400;
+$mainTextSize: 20px;
+$negro: #323232;
+$bordo: #844131;
+$crema: #FFF5ED;
+$blanco: #FFFBF9;
+
+body{
+    background-color: $negro;
+}
+
+.menu{
+    color: $blanco;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav{
+    width: 60%;
+
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 5% 2% 5%;
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+}
+
+nav ul ul li{
+    display: block;
+}
+
+ul li:hover ul{
+    display: block;
+    padding-top: 2%;
+}
+
+nav ul li:hover{
+    box-shadow: inset 0 -2px 0 0 white;
+}
+
