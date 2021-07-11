@@ -208,7 +208,7 @@ ul li:hover ul li {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  padding: 50px 10%;
+  padding: 10px 10%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -222,32 +222,59 @@ ul li:hover ul li {
 }
 
 .pieLogo img {
-  height: 90px;
+  height: 100px;
 }
 
 .pieMenu {
-  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .pieMenu a {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  margin: 0 3%;
+  margin: 5px 20%;
   color: #FFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.212);
 }
 
-.pieRedes svg {
-  width: 20px;
-  height: 20px;
+.pieRedes i {
   margin: 30px 6.5px 23px 6.5px;
+  font-size: 30px;
 }
 
 .pieCopy {
   border-top: 1px solid #FFF;
   padding-top: 23px;
+  padding-bottom: 10px;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   line-height: 18px;
+}
+
+@media all and (min-width: 576px) {
+  .pie {
+    padding: 40px 10%;
+  }
+  .pieMenu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 22px;
+  }
+  .pieMenu a {
+    margin: 0 3%;
+    border-bottom: none;
+  }
 }

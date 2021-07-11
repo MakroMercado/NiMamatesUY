@@ -7,7 +7,7 @@
 .pie{
     display: flex;
     flex-flow: column nowrap;
-    padding: 50px 10% ;
+    padding: 10px 10% ;
     justify-content: center;
     text-align: center;
     background-color: #844131;
@@ -15,32 +15,49 @@
     &Logo{
         text-align: center;
         img{
-            height: 90px;
+            height: 100px;
         }
     }
     &Menu{
-        margin-top: 22px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
         a{
             font-family: $font;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 16px;
             line-height: 24px;
-            margin: 0 3%;
+            margin: 5px 20%;
             color:#FFF;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.212);
         }
     }
     &Redes{
-        svg{
-            width: 20px;
-            height: 20px;
+        i{
             margin: 30px 6.5px 23px 6.5px;
+            font-size: 30px;
         }
     }
     &Copy{
         border-top: 1px solid #FFF;
         padding-top: 23px;
+        padding-bottom: 10px;
         font-family: $font;
         font-size: 12px;
         line-height: 18px;
+    }
+}
+
+@media all and (min-width: 576px){
+    .pie{
+        padding: 40px 10%;
+        &Menu{
+            flex-direction: row;
+            margin-top: 22px;
+            a{
+                margin: 0 3%;
+                border-bottom: none;
+            }
+        }
     }
 }
