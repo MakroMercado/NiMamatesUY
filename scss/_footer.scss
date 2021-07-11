@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.pie{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 50px 10% ;
+    justify-content: center;
+    text-align: center;
+    background-color: #844131;
+    color: #FFF;
+    &Logo{
+        text-align: center;
+        img{
+            height: 90px;
+        }
+    }
+    &Menu{
+        margin-top: 22px;
+        a{
+            font-family: $font;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 3%;
+            color:#FFF;
+        }
+    }
+    &Redes{
+        svg{
+            width: 20px;
+            height: 20px;
+            margin: 30px 6.5px 23px 6.5px;
+        }
+    }
+    &Copy{
+        border-top: 1px solid #FFF;
+        padding-top: 23px;
+        font-family: $font;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
