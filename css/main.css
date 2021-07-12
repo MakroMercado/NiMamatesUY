@@ -278,3 +278,160 @@ ul li:hover ul li {
     border-bottom: none;
   }
 }
+
+.hdFicha {
+  height: 200px;
+  width: 100%;
+  background-color: #844131;
+}
+
+#contFicha {
+  padding: 10%;
+}
+
+.ficha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.fichaGaleria {
+  width: 100%;
+  max-width: 460px;
+}
+
+.fichaGaleria #imgPrincipal {
+  position: relative;
+}
+
+.fichaGaleria #imgPrincipal img {
+  width: 100%;
+  border-radius: 3%;
+}
+
+.fichaGaleria #imgPrincipal #flechaExpandir {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.fichaGaleria #imgPrincipal #flechaExpandir i {
+  color: rgba(255, 255, 255, 0.719);
+  font-size: 20px;
+  text-shadow: 3px 2px 2px #000;
+  cursor: pointer;
+}
+
+.fichaGaleria #imgPrincipal #flechaExpandir i:hover {
+  color: #fff;
+}
+
+.fichaGaleria #contItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fichaGaleria #contItems .flecha {
+  width: 10%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fichaGaleria #contItems .imgItem {
+  width: 20%;
+  margin: 2% 1%;
+  border-radius: 13px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.fichaGaleria #contItems .imgItem:hover, .fichaGaleria #contItems .active {
+  opacity: 1;
+  -webkit-box-shadow: 2px 2px 2px #000;
+          box-shadow: 2px 2px 2px #000;
+}
+
+.fichaInfo {
+  border: 1px solid #000;
+}
+
+#modalExpandir {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 20px 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modalExpandir .modalImagen {
+  margin: auto;
+  display: block;
+  width: 50%;
+  -webkit-animation-name: zoomTest;
+          animation-name: zoomTest;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoomTest {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoomTest {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+#modalExpandir .cerrarExpandir {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 30px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#modalExpandir .cerrarExpandir:hover,
+#modalExpandir .cerrarExpandir:focus {
+  color: #bbb;
+  cursor: pointer;
+}
