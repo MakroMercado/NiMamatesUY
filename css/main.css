@@ -1,4 +1,5 @@
 /*variables*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -297,19 +298,25 @@ ul li:hover ul li {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
 }
 
 .fichaGaleria {
   width: 100%;
-  max-width: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
 .fichaGaleria #imgPrincipal {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .fichaGaleria #imgPrincipal img {
@@ -351,14 +358,24 @@ ul li:hover ul li {
 }
 
 .fichaGaleria #contItems .flecha {
-  width: 10%;
-  text-align: center;
+  width: 20%;
+}
+
+.fichaGaleria #contItems .flecha i {
   cursor: pointer;
 }
 
+.fichaGaleria #contItems .izq {
+  text-align: left;
+}
+
+.fichaGaleria #contItems .der {
+  text-align: right;
+}
+
 .fichaGaleria #contItems .imgItem {
-  width: 20%;
-  margin: 2% 1%;
+  width: 15%;
+  margin: 2% 2%;
   border-radius: 13px;
   opacity: 0.6;
   cursor: pointer;
@@ -371,7 +388,126 @@ ul li:hover ul li {
 }
 
 .fichaInfo {
-  border: 1px solid #000;
+  font-family: 'Poppins';
+  padding-top: 20px;
+  color: #323232;
+}
+
+.fichaInfo h5 {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.fichaInfo h5.pago {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+}
+
+.fichaInfo h2 {
+  font-size: 32px;
+}
+
+.fichaInfo h4 {
+  font-size: 20px;
+}
+
+.fichaInfo p {
+  font-size: 16px;
+}
+
+.fichaInfo p span {
+  font-weight: 550;
+}
+
+.fichaInfoPrecio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+}
+
+.fichaInfoPrecio h2 {
+  font-weight: 500;
+}
+
+.fichaInfoPrecio button {
+  margin-left: 5%;
+  height: 32px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #844131;
+  font-size: 18px;
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+
+@media all and (min-width: 576px) {
+  .fichaGaleria #imgPrincipal {
+    padding: 0 10%;
+  }
+  .fichaGaleria #imgPrincipal #flechaExpandir {
+    right: 15%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #contFicha {
+    padding: 5%;
+  }
+  .ficha {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .fichaGaleria {
+    width: 30%;
+    margin-right: 40px;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    overflow: auto;
+  }
+  .fichaGaleria #imgPrincipal {
+    padding: 0;
+  }
+  .fichaGaleria #imgPrincipal #flechaExpandir {
+    right: 5%;
+  }
+  .fichaInfo {
+    width: 60%;
+    padding-top: 0;
+    -webkit-box-flex: 6;
+        -ms-flex-positive: 6;
+            flex-grow: 6;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .fichaInfo {
+    border: 1px solid #000;
+    font-family: 'Poppins';
+  }
+  .fichaInfo h5 {
+    font-size: 16px;
+    font-weight: 200;
+  }
+  .fichaInfo h2 {
+    font-size: 45px;
+  }
+  .fichaInfo h4 {
+    font-size: 24px;
+  }
+  .fichaInfo p {
+    font-size: 22px;
+  }
 }
 
 #modalExpandir {

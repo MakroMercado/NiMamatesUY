@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .hdFicha{
     height: 200px;
     width: 100%;
@@ -11,15 +13,16 @@
 .ficha{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    text-align: center;
 }
 
 .fichaGaleria{
     width: 100%;
-    max-width: 460px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
     #imgPrincipal{
         position: relative;
+        margin-bottom: 20px;
         img{
             width: 100%;
             border-radius: 3%;
@@ -45,13 +48,21 @@
         justify-content: center;
         align-items: center;
         .flecha{
-            width: 10%;
-            text-align: center;
-            cursor: pointer;
+            width: 20%;
+            i{
+                cursor: pointer;
+            }
+        }
+        .izq{
+            text-align: left;
+        }
+        .der{
+            text-align: right;
+            
         }
         .imgItem{
-            width: 20%;
-            margin: 2% 1%;
+            width: 15%;
+            margin: 2% 2%;
             border-radius: 13px;
             opacity: 0.6;
             cursor: pointer;
@@ -64,8 +75,106 @@
 }
 
 .fichaInfo{
-    border: 1px solid #000;
+    font-family: 'Poppins';
+    padding-top: 20px;
+    color: #323232;
+    h5{
+        font-size: 14px;
+        font-weight: 200;
+    }
+    h5.pago{
+        display: inline-block;
+        border-bottom: 1px solid #000;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+        span{
+            font-weight: 550;
+        }
+    }
+    &Precio{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin: 5px 0;
+        h2{
+            font-weight: 500;
+        }
+        button{
+            margin-left: 5%;
+            height: 32px;
+            width: 100px;
+            border-radius: 10px;
+            background-color: $bordo;
+            font-size: 18px;
+            color: #FFF;
+            border: 1px solid #FFF;
+        }
+    }
 }
+
+@media all and (min-width: 576px){
+    .fichaGaleria{
+        #imgPrincipal{
+            padding: 0 10%;
+            #flechaExpandir{
+                right: 15%;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px){
+    #contFicha{
+        padding: 5%;
+    }
+    .ficha{
+        flex-flow: row nowrap;
+    }
+    .fichaGaleria{
+        width: 30%;
+        margin-right: 40px;
+        flex-grow: 0;
+        overflow: auto;
+        #imgPrincipal{
+            padding: 0;
+            #flechaExpandir{
+                right: 5%;
+            }
+        }
+    }
+    .fichaInfo{
+        width: 60%;
+        padding-top: 0;
+        flex-grow: 6;
+    }
+}
+@media all and (min-width: 992px){
+    .fichaInfo{
+        border: 1px solid #000;
+        font-family: 'Poppins';
+        h5{
+            font-size: 16px;
+            font-weight: 200;
+        }
+        h2{
+            font-size: 45px;
+        }
+        h4{
+            font-size: 24px;
+        }
+        p{
+            font-size: 22px;
+        }
+    }
+}
+
 
 #modalExpandir {
     display: none;
