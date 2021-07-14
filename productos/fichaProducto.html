@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Tipografías-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+    </style>
+    <!--SEO-->
+    <meta name="keywords"  content="">
+    <meta name="description" content="">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/c49537d3d2.js" crossorigin="anonymous"></script>    
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <title>NimaMatesUY</title>
 </head>
 <body>
-    
+    <header class="hdFicha">
+
+    </header>
+
+    <main id="contFicha">
+        <div class="ficha">
+            <div class="fichaGaleria">
+                <div id="imgPrincipal">
+                    <img id="imgActiva" src="../img/productos/mate1.png" alt="">
+                    <span id="flechaExpandir">
+                        <i class="fas fa-expand-alt"></i>
+                    </span>
+                </div>
+                <div id="contItems">
+                    <div class="flecha izq">
+                        <i id="flechaIZQ" class="fas fa-chevron-left"></i>
+                    </div>
+                    <img class="imgItem active" src="../img/productos/mate1.png" alt="" ind="0">
+                    <img class="imgItem" src="../img/productos/mate2.png" alt="" ind="1">
+                    <img class="imgItem" src="../img/productos/mate3.png" alt="" ind="2">
+                    <img class="imgItem" src="../img/productos/mate4.png" alt="" ind="3">
+                    <div class="flecha der">
+                        <i id="flechaDER" class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="fichaInfo">
+                <h5>Categoría</h5>
+                <h2>Nombre del producto</h2>
+                <h4>Descripción</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias recusandae, labore veritatis asperiores repellat, delectus, iste nostrum numquam perferendis ipsam sapiente dolore pariatur dolor molestiae veniam? Ratione fuga autem inventore.</p>
+                <p><span>Tamaños disponibles: </span>chico, mediano y grande</p>
+                <div class="fichaInfoPrecio">
+                    <h2>$1300,00</h2>
+                    <button>Comprar</button>
+                </div>
+                <h5 class="pago">ver medios de pago</h5>
+            </div>
+        </div>
+        <div id="modalExpandir">
+            <span class="cerrarExpandir"><i class="fas fa-times"></i></span>
+            <img class="modalImagen">
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/carouselFicha.js"></script>
 </body>
 </html>
