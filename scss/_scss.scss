@@ -144,6 +144,8 @@ ul li:hover ul li{
 .header{
     margin-top: 3%;
     width: 100%;
+    text-align: center;
+    align-items: center;
 }
 
 .titulo{
@@ -168,7 +170,7 @@ ul li:hover ul li{
 }
 
 .comprar{
-    width: 150px;
+    margin: 0%;
     display: flex;
     justify-content: center;
     border: solid 1px;
@@ -178,7 +180,8 @@ ul li:hover ul li{
     line-height: 33px;
     border-radius: 13px;
     padding: 0.5%;
-    margin: 0 0 50px 42%;
+    width: fit-content;
+    margin: 0 45% 50px 45%;
 }
 
 @media (max-width: 1100px){
