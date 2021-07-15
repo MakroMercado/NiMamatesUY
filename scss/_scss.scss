@@ -15,9 +15,6 @@ a:visited{
     color: $blanco;
 }
 
-.hambMenu{
-    display: none;
-}
 
 /*menu*/
 
@@ -27,6 +24,15 @@ a:visited{
     grid-template-areas: 
     "logo logo menu menu menu menu menu redes redes escribinos";
     grid-template-columns: 10%;
+}
+
+.hide{
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    background-color: $bordo;
+    color: $blanco;
+    display: none;
 }
 
 /*logo*/
@@ -133,7 +139,6 @@ ul li:hover ul li{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 600px;
 }
 
 .header{
@@ -163,15 +168,67 @@ ul li:hover ul li{
 }
 
 .comprar{
+    width: 150px;
     display: flex;
     justify-content: center;
     border: solid 1px;
-    margin: 2% 42%;
     font-family: $font;
     font-size: $h2size;
     font-weight: $h2weight;
     line-height: 33px;
     border-radius: 13px;
     padding: 0.5%;
+    margin: 0 0 50px 42%;
 }
 
+@media (max-width: 1100px){
+    nav ul li{
+        width: 100%;
+        display: block;
+        text-align: left;
+        margin: 0;
+        padding-left: 20px;
+        background-color: $bordo;
+        box-shadow: inset 0 -1px 0 0 white;
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .hide{
+        display: block;
+        padding: 20px;
+    }
+
+    .redes{
+        display: none;
+    }
+
+    .escribinos{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .menu{
+        margin: 0%;
+        display: inline;
+        width: 100%;
+    }
+
+    nav{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .nima{
+        display: inline;
+        padding-left: 20px;
+    }
+    
+}
