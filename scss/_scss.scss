@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: #E5E5E5;
+    background-color: $blanco;
 }
 
 a{
@@ -190,6 +190,36 @@ ul li:hover ul li{
 
 .ocultar{
     display: none;
+}
+
+/*carrousel de productos destacados*/
+
+.tituloPD{
+    margin: 70px 0 30px 0;
+    text-align: center;
+    color: $negro;
+    font-family: $font;
+}
+
+.carousel{
+    text-align: center;
+    font-family: $font;
+    background-color: $crema;
+    padding: 50px 0 30px 0;
+}
+
+.carousel__lista{
+    padding-bottom: 30px;
+}
+
+.precio{
+    color: $bordo;
+}
+
+.nombre{
+    color: $negro;
+    font-weight: $h2weight;
+    font-size: $h2size;
 }
 
 @media all and (min-width: 1100px){

@@ -5,7 +5,7 @@
   padding: 0; }
 
 body {
-  background-color: #E5E5E5; }
+  background-color: #FFFBF9; }
 
 a {
   color: #FFFBF9;
@@ -161,6 +161,30 @@ ul li:hover ul li {
 
 .ocultar {
   display: none; }
+
+/*carrousel de productos destacados*/
+.tituloPD {
+  margin: 70px 0 30px 0;
+  text-align: center;
+  color: #323232;
+  font-family: "Poppins", sans-serif; }
+
+.carousel {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #FFF5ED;
+  padding: 50px 0 30px 0; }
+
+.carousel__lista {
+  padding-bottom: 30px; }
+
+.precio {
+  color: #844131; }
+
+.nombre {
+  color: #323232;
+  font-weight: 500;
+  font-size: 22px; }
 
 @media all and (min-width: 1100px) {
   .principal {
