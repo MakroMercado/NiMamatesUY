@@ -135,7 +135,7 @@ ul li:hover ul li{
     display: inline-block;
     margin: 0;
     padding: 0;
-    background-image: url(../img/pruebaImagenContenedor.jpg);
+    background-image: url(../img/pruebaImagenContenedor.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -169,10 +169,14 @@ ul li:hover ul li{
     text-align: center;
 }
 
-.comprar{
-    margin: 0%;
+.bComprar{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
+}
+
+.comprar{
+    margin: 0%;
     border: solid 1px;
     font-family: $font;
     font-size: $h2size;
@@ -181,7 +185,6 @@ ul li:hover ul li{
     border-radius: 13px;
     padding: 0.5%;
     width: fit-content;
-    margin: 0 45% 50px 45%;
 }
 
 .mostrar{
@@ -190,36 +193,6 @@ ul li:hover ul li{
 
 .ocultar{
     display: none;
-}
-
-/*carrousel de productos destacados*/
-
-.tituloPD{
-    margin: 70px 0 30px 0;
-    text-align: center;
-    color: $negro;
-    font-family: $font;
-}
-
-.carousel{
-    text-align: center;
-    font-family: $font;
-    background-color: $crema;
-    padding: 50px 0 30px 0;
-}
-
-.carousel__lista{
-    padding-bottom: 30px;
-}
-
-.precio{
-    color: $bordo;
-}
-
-.nombre{
-    color: $negro;
-    font-weight: $h2weight;
-    font-size: $h2size;
 }
 
 @media all and (min-width: 1100px){

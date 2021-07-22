@@ -1,0 +1,149 @@
+/*carrousel de productos destacados*/
+
+.tituloPD{
+    margin: 70px 0 30px 0;
+    text-align: center;
+    color: $negro;
+    font-family: $font;
+}
+
+.carousel{
+    text-align: center;
+    font-family: $font;
+    background-color: $crema;
+    padding: 50px 0 30px 0;
+}
+
+.carousel__lista{
+    padding-bottom: 30px;
+}
+
+.precio{
+    color: $bordo;
+}
+
+.nombre{
+    color: $negro;
+    font-weight: $h2weight;
+    font-size: $h2size;
+}
+
+/*fila de productos*/
+
+.fFotos{
+    margin: 70px 0 70px 0;
+    border-top: 1px solid #844131;
+    border-bottom: 1px solid #844131;
+}
+
+.filaFotos{
+    display: flex;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.filaFotos__foto{
+    margin: 10px;
+
+}
+
+.bMas{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.btnMas{
+    font-family: $font;
+    background-color: $bordo;
+    border-radius: 25px;
+    width: 142px;
+    height: 48px;
+    border: none;
+    text-align: center;
+    color: $blanco;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*tips*/
+.tipsSeccion{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.textoTips{
+    font-family: $font;
+    text-align: center;
+}
+
+.textoTips__t{
+    font-weight: $h1weight;
+    font-size: $h1size;
+    color: $negro;
+}
+
+.textoTips__p{
+    font-size: $h2size;
+    font-weight: $h2weight;
+    color: $negro;
+
+}
+
+.tips{
+    width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card{
+	margin: 30px;
+	width: min-content;
+	padding: 40px;
+	border-radius: 30px;
+	box-shadow: 7px 7px 15px rgba(55,84,170,.15),
+				-7px -7px 20px #fff,
+				0 0 4px rgba(255,255,255,.2);
+}
+
+.imgbox{
+	overflow: hidden;
+}
+.imgbox img{
+	width: inherit;
+	height: inherit;
+}
+.title{
+	margin-top: 20px;
+    font-family: $font;
+    text-align: center;
+}
+
+.title__t{
+    font-weight: $h2weight;
+    font-size: $h2size;
+    color: $negro;
+    margin: 20px;
+}
+
+.title__p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px;
+
+}
+
+/*carrito*/
+
+.carrito{
+    background-image: url(../img/pDestacados/fondo.png);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
