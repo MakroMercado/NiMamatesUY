@@ -31,20 +31,29 @@
 /*fila de productos*/
 
 .fFotos{
-    margin: 70px 0 70px 0;
     border-top: 1px solid #844131;
     border-bottom: 1px solid #844131;
+    text-align: center;
+    font-family: $font;
+    background-color: $blanco;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
 }
 
 .filaFotos{
-    display: flex;
-    padding: 30px;
-    margin-top: 30px;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-.filaFotos__foto{
-    margin: 10px;
-
+.foto{
+	margin: 5px;
+	width: min-content;
+	padding: 5px;
 }
 
 .bMas{
@@ -142,8 +151,30 @@
 
 .carrito{
     background-image: url(../img/pDestacados/fondo.png);
+    background-repeat: round;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 20px 0;
 }
 
+.bloque{
+    display: inline-block;
+    text-align: center;
+}
+
+
+@media all and (max-width: 880px){
+    .carrito{
+        background-image: url(../img/pDestacados/fondo-para-responsive.jpg);
+        background-repeat: space;
+        display: block;
+        width: 100%;
+    }
+
+    .bloque{
+        display: block;
+        padding-top: 30px;
+    }
+
+}
