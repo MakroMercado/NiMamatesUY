@@ -517,13 +517,6 @@ ul li:hover ul li {
   border-radius: 30px;
   box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px #fff, 0 0 4px rgba(255, 255, 255, 0.2); }
 
-.imgbox {
-  overflow: hidden; }
-
-.imgbox img {
-  width: inherit;
-  height: inherit; }
-
 .title {
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
@@ -563,3 +556,63 @@ ul li:hover ul li {
   .bloque {
     display: block;
     padding-top: 30px; } }
+
+.contenedorNosotros {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/nosotros/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 550px; }
+
+.nuestraHistoria {
+  background-color: #FFF5ED;
+  padding: 100px 0; }
+
+.tituloNosotros {
+  display: flex;
+  justify-content: center;
+  color: #323232;
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 67px; }
+
+.parrafoN {
+  display: flex;
+  justify-content: center;
+  color: #323232;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 2% 7%;
+  text-align: center; }
+
+.infoEllos {
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Poppins", sans-serif; }
+
+.infoEllos__nombre {
+  color: #844131; }
+
+.infoEllos__rol {
+  color: #323232; }
+
+.datosEllos {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 0; }
+
+.datosEllos__titulo {
+  display: inline;
+  color: #844131; }
+
+.datosEllos__dato {
+  display: inline;
+  color: #323232; }
+
+.ancho {
+  background-color: #FFFBF9; }

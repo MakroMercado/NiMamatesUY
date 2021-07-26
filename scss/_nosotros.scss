@@ -1,0 +1,72 @@
+.contenedorNosotros{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/nosotros/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+}
+
+.nuestraHistoria{
+    background-color: $crema;
+    padding: 100px 0;
+}
+
+.tituloNosotros{
+    display: flex;
+    justify-content: center;
+    color: $negro;
+    font-family: $font;
+    font-size: $h1size;
+    font-weight: $h1weight;
+    line-height: 67px;
+
+}
+
+.parrafoN{
+    display: flex;
+    justify-content: center;
+    color: $negro;
+    font-family: $font;
+    font-size: $h2size;
+    font-weight: $h2weight;
+    margin: 2% 7%;
+    text-align: center;
+
+}
+
+.infoEllos{
+    text-align: center;
+    padding: 20px 0;
+    font-family: $font;
+}
+
+.infoEllos__nombre{
+    color: $bordo;
+}
+
+.infoEllos__rol{
+    color: $negro;
+}
+
+.datosEllos{
+    text-align: left;
+    font-family: $font;
+    padding: 20px 0;
+}
+
+.datosEllos__titulo{
+    display: inline;
+    color: $bordo;
+}
+
+.datosEllos__dato{
+    display: inline;
+    color: $negro;
+}
+
+.ancho{
+    background-color: $blanco;
+}
