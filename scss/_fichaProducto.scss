@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.hdFicha{
-    height: 200px;
-    width: 100%;
-    background-color: $bordo;
-}
-
-#contFicha{
-    padding: 10%;
-}
-
 .ficha{
     display: flex;
     flex-flow: column nowrap;
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+.margProd{
+    padding-bottom: 0px;
+    margin-bottom: 50px;
+}
+
+.kit{
+    padding: 20px;
 }
 
 .fichaGaleria{
@@ -131,9 +132,6 @@
 }
 
 @media all and (min-width: 768px){
-    #contFicha{
-        padding: 5%;
-    }
     .ficha{
         flex-flow: row nowrap;
     }
@@ -157,7 +155,6 @@
 }
 @media all and (min-width: 992px){
     .fichaInfo{
-        border: 1px solid #000;
         font-family: 'Poppins';
         h5{
             font-size: 16px;

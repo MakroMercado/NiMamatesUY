@@ -1,0 +1,141 @@
+.contenedorTips{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/tips/heaTip.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+
+.contTips{
+    padding: 50px 5%;
+}
+
+.tipCont{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $bordo;
+    .contInfo{
+        .tituloCont{
+            .tituloTip{
+                color: $negro;
+                font-family: $font;
+                font-size: 24px;
+                font-weight: $h1weight;
+                line-height: 67px;
+            } 
+        }  
+        
+        .parrafoTip{
+            text-align: left;
+            margin:0;
+            color: $negro;
+            font-family: $font;
+            font-size: 16px;
+            font-weight: $h2weight;
+            padding-bottom: 10px;
+        }
+    }
+    .imagenTip{
+        display: flex;
+        align-items: center;
+        img{
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.76);
+        }
+    }
+}
+
+
+@media all and (min-width: 992px){
+    .tipCont{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+        .contInfo.der{
+            order: 1;
+        }
+        .contInfo{
+            width: 40%;
+            .tituloCont{
+                .tituloTip{
+                    color: $negro;
+                    font-family: $font;
+                    font-size: 32px;
+                    font-weight: $h1weight;
+                    line-height: 67px;
+                    margin-bottom: 1%;
+                } 
+            }  
+            
+            .parrafoTip{
+                text-align: left;
+                margin:0;
+                color: $negro;
+                font-family: $font;
+                font-size: 22px;
+                font-weight: $h2weight;
+            }
+        }
+        .imagenTip{
+            width: 52%;
+            display: flex;
+            align-items: center;
+            img{
+                width: 100%;
+                max-height: 458px;
+                max-width: none;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1200px){
+    .tipCont{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+        .contInfo{
+            width: 40%;
+            .tituloCont{
+                .tituloTip{
+                    color: $negro;
+                    font-family: $font;
+                    font-size: $h1size;
+                    font-weight: $h1weight;
+                    line-height: 67px;
+                    margin-bottom: 1%;
+                } 
+            }  
+            
+            .parrafoTip{
+                text-align: left;
+                margin:0;
+                color: $negro;
+                font-family: $font;
+                font-size: $h2size;
+                font-weight: $h2weight;
+            }
+        }
+        .imagenTip{
+            width: 52%;
+            display: flex;
+            align-items: center;
+            img{
+                width: 100%;
+                max-height: 458px;
+            }
+        }
+    }
+}
